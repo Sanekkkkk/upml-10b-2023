@@ -4,13 +4,13 @@ a = []
 for i in range(n):
     el = int(input())
     a.append(el)
-    
-flag = False
+
+c = 0
 for i in range(n):
     if a[i] == 0:
-        flag = True
-        
-if flag:
-    print("є")
+        c += 1
+
+if c >= 3:
+    print ("є")
 else:
-    print("нема")
+    print ("нема")

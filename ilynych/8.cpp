@@ -15,20 +15,17 @@ int main()
         cin >> a[i];
     }
     
-    // чи є хоча б один нуль
-    bool flag = false;
+    // сума елементів, які менші за 5
+    int summa = 0;
     for(int i = 0; i < n; i++)
     {
-        if(a[i] == 0)
+        if(a[i] < 5)
         {
-            flag = true;
+            summa += a[i];
         }
     }
     
     // виведення
-    if(flag)
-        cout << "є" << endl;
-    else
-        cout << "нема" << endl;
+    cout << summa << endl;
 }
 
